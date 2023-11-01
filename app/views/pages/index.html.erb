@@ -1,0 +1,10 @@
+<h1>home page</h1>
+
+<%if current_user%>
+<h2><%=current_user.email%></h2>
+<%=link_to "edit account", edit_user_registration_path %>
+<%= button_to "Logout", destroy_user_session_path, 'data-turbo-method': :delete %>
+<%else%>
+<%= link_to "Log in", new_user_session_path%>
+<%= link_to "Create account", new_user_registration_path%>
+<%end%>
