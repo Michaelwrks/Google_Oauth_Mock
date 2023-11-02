@@ -55,9 +55,9 @@ end
 gem "devise" 
 gem 'omniauth-auth0', '~> 3.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
-# gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2'
 
-gem 'oauth2', '~> 1.0'
+# gem 'oauth2', '~> 1.0'
 gem 'dotenv-rails'
 gem 'jquery-rails',             '~> 4.3', '>= 4.3.5'
 gem 'jquery-ui-rails'
